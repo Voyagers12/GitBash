@@ -19,14 +19,8 @@ GitHub. HW_2
 
 2. Запушить все ветки на внешний репозиторий
 
-	git push -u origin Postman
-	git push -u origin Jmeter
-	git push -u origin CheckList
-	git push -u origin Bag_Reports
-	git push -u origin SQL
-	git push -u origin Charles
-	git push -u origin Mobile_testing
-
+	git push -u origin --all
+	
 3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
 
 	git checkout bug_reports
