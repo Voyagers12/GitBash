@@ -1,0 +1,253 @@
+Как отправить ДЗ на проверку.
+ 1. Создайте текстовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+ 
+	JSON
+ 4. Создать внешний репозиторий c названием JSON.
+	https://github.com/Voyagers12/JSON.git
+ 
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+ 
+	git clone git@github.com:Voyagers12/JSON.git
+  
+ 6. Внутри локального JSON создать файл “new.json”.
+ 
+	cat > new.json
+
+ 7. Добавить файл под гит.
+	
+	git add new.json
+
+ 8. Закоммитить файл.
+ 
+	git commit -m "add new.json"
+ 
+ 9. Отправить файл на внешний GitHub репозиторий.
+ 
+	git push 
+ 
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+ 
+	cat > new.json
+	{"full_name":"Smolenkov_Gleb_Sergeevich",
+	"number_of_pets":0,
+	"desired_salary":2000}
+ 
+ 11. Отправить изменения на внешний репозиторий.
+	
+	git commit -am "modify"
+	git push
+ 
+ 12. Создать файл preferences.json
+ 
+	cat > preferences.json
+	
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна которую хотели бы посетить) в формате JSON.
+ 
+	{"favorite_movie":"Tokyo_Drift",
+	"favorite_series":"Brassic",
+	"favorite_food":"Proper nutrition",
+	"favorite_season":"All seasons",
+	"country_u_would_like_to_visit":"Japan"}
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+ 
+	cat > skills.json
+	{"Skills": ["Postman", "SQL", "JavaScript", "DevTools", "GitBash"]}
+	
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+ 
+	git add .
+	git commit -am "add 2 files"
+	git push
+	
+ 16. На веб интерфейсе создать файл bug_report.json.
+ 
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+ 
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+ 
+	git fetch
+	git pull
+	
+	XML
+ 21. Создать внешний репозиторий c названием XML.
+ 
+	git@github.com:Voyagers12/XML.git
+	
+ 22. Клонировать репозиторий XML на локальный компьютер.
+ 
+	git clone git@github.com:Voyagers12/XML.git
+ 
+ 23. Внутри локального XML создать файл “new.xml”.
+ 
+	cat > new.xml
+ 
+ 24. Добавить файл под гит.
+ 
+	git add new.xml
+	
+ 25. Закоммитить файл.
+ 
+	 git commit -am "add new.xml"
+ 
+ 26. Отправить файл на внешний GitHub репозиторий.
+ 
+	git push
+ 
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+ 
+	<?xml version="1.0" encoding="windows-1251"?>
+	<about>
+		<full_name>Smolenkov_Gleb_Sergeevich</full_name>
+		<number_of_pets>0</number_of_pets>
+		<desired_salary>2000</desired_salary>
+	</about>
+ 
+ 28. Отправить изменения на внешний репозиторий.
+ 
+	git commit -am "modified"
+	git push
+ 
+ 29. Создать файл preferences.xml
+ 
+	cat > preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+ 
+	<?xml version="1.0" encoding="windows-1251"?>
+	<preferences>
+		<favorite_movie>Tokyo_Drift</favorite_movie>
+		<favorite_series>Brassic</favorite_series>
+		<favorite_food>Proper nutrition</favorite_food>
+		<favorite_season>All seasons</favorite_season>
+		<country_u_would_like_to_visit>Japan</country_u_would_like_to_visit>
+	</preferences>
+
+ 
+ 31. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+ 
+	cat > skills.xml
+	<?xml version="1.0" encoding="windows-1251"?>
+	<Skills> 
+		<Skill_1>Postman </Skill_1>
+		<Skill_2>SQL</Skill_2>
+		<Skill_3>JavaScript</Skill_3>
+		<Skill_4>DevTools</Skill_4>
+		<Skill_5>GitBash</Skill_5>
+	</Skills> 
+	
+ 32. Сделать коммит в одну строку.
+ 
+	git add .
+	git commit -am "add 2 files"
+	
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+	
+	git push
+	
+ 34. На веб интерфейсе создать файл bug_report.xml.
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+ 
+	<?xml version="1.0" encoding="windows-1251"?>
+	<bug_report>
+		<ID>1</ID>
+		<Environment>Windows 10, Chrome 106.0.5249.119</Environment>
+		<title>Кнопка "Create account" в разделе "Products", подразделе "Сurrency.com cryptoplatform", ведет на несуществующий ресурс "Ошибка 404"</title>
+		<precondition>"1. Открыть сайт http://currency.com/ 2. Открывается 3. Авторизоваться"</precondition>
+		<STR>"1. Перейти в раздел Products, подраздел Currency.com Cryptoplatform 2. Кликнуть по кнопке  ""Create account"" в верхнем блоке страницы"</STR>
+		<AR>Открывается страница с ошибкой "404 Not Found"</AR>
+		<ER>Открывается окно регистрации Sign up</ER>
+		<LINK>https://drive.google.com/file/d/15M_4laLUgwV1CS5RMvjLwoN-y51A_MPb/view?usp=sharing</LINK>
+	</bug_report>
+	
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 38. Синхронизировать внешний и локальный репозиторий XML
+ 
+	git fetch
+	git pull
+	
+	TXT
+ 1. Создать внешний репозиторий c названием TXT.
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+ 
+	 git clone git@github.com:Voyagers12/TXT.git
+ 
+ 3. Внутри локального TXT создать файл “new.txt”.
+		
+	cat > new.txt
+	
+ 4. Добавить файл под гит.
+	
+	git add new.txt
+		
+ 5. Закоммитить файл.
+ 
+	git commit -m "add new.txt"
+ 
+ 6. Отправить файл на внешний GitHub репозиторий.
+ 
+	git push
+	
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+ 
+	ФИО: Смоленков Глеб Сергеевич
+	Возраст: 29 лет
+	Количество домашних животных: 0
+	Будущая желаемая зарплата: 2000$
+ 
+ 8. Отправить изменения на внешний репозиторий.
+	
+	git commit -am "modified"
+	git push
+	
+ 9. Создать файл preferences.txt
+	
+	cat > preferences.txt
+	
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+ 
+	Любимый фильм: Токийский дрифт
+	Любимый сериал Голяк
+	Любимая еда: Правильное питание
+	Любимое время года: Круглый год 
+	Сторона которую хотели бы посетить: Япония
+ 
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+ 
+	cat > skills.txt
+	Скиллы полученные при обучении: Postman", SQL, JavaScript, DevTools, GitBash
+	
+ 12. Сделать коммит в одну строку.
+ 
+	git add .
+	git commit -am "add 2 files"
+
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+	
+	git push
+	
+ 14. На веб интерфейсе создать файл bug_report.txt.
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+ 
+	ID: 1
+	Environment: Windows 10, Chrome 106.0.5249.119
+	Title: Кнопка "Create account" в разделе "Products", подразделе "Сurrency.com cryptoplatform", ведет на несуществующий ресурс "Ошибка 404"</title>
+	Precondition: 1. Открыть сайт http://currency.com/ 2. Открывается 3. Авторизоваться"</precondition>
+	STR: 1. Перейти в раздел Products, подраздел Currency.com Cryptoplatform 2. Кликнуть по кнопке  ""Create account"" в верхнем блоке страницы"</STR>
+	AR: Открывается страница с ошибкой "404 Not Found"
+	ER: Открывается окно регистрации Sign up
+	LINK: https://drive.google.com/file/d/15M_4laLUgwV1CS5RMvjLwoN-y51A_MPb/view?usp=sharing 
+ 
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+ 
+	git fetch
+	git pull
