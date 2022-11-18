@@ -67,4 +67,5 @@ GitHub. HW_2
 9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
 10. Синхронизировать Внешнюю и Локальную ветки Main
 	
+	git fetch
 	git pull
